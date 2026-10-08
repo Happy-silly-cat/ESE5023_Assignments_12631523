@@ -141,7 +141,7 @@ def find_expression(tar,deep = 1,symb = 0,res = 0,temp = '',fs = ''):
     if(deep == 9):
         res = cal(symb,res,temp+num_list[deep])
         if(res == tar):
-            #print(fs + num_list[deep] + '=' + str(tar))
+            print(fs + num_list[deep] + '=' + str(tar))
             return 1
         return 0
     ##接下来，什么都不做，那就接着把数字补全
@@ -224,8 +224,4 @@ Total_Solution = [0, 26, 11, 18, 8, 21, 12, 17, 8, 22, 12, 21, 11, 16, 15, 20, 8
 
 
 
-
-
-
-
-结合图片
+片
