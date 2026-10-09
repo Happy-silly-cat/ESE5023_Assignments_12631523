@@ -10,7 +10,7 @@ Created on Thu Oct  8 23:37:27 2026
 ##1 2 3 4 5 6 7 8 9
 ##初始化数字列表以及存储答案的列表
 num_list = ['0','1','2','3','4','5','6','7','8','9']
-ans = [0]
+Total_solutions = [0]
 ##计算函数
 def cal(symb,res,temp):
     if(symb == 0):
@@ -37,3 +37,28 @@ def find_expression(tar,deep = 1,symb = 0,res = 0,temp = '',fs = ''):
     return count1 + count2 + count3
 
 find_expression(50)
+
+for i in range(1,101):
+    Total_solutions.append(find_expression(i))
+
+
+print(Total_solutions)
+
+import matplotlib.pyplot as plt
+
+# Get some data
+x = range(1,101)
+y = Total_solutions[1:101]
+
+# Plot a line
+plt.plot(x,y)
+
+# Add x and y labels
+plt.xlabel("Number")
+plt.ylabel("Total_solutions")
+
+
+# Show plot
+plt.show
+
+
