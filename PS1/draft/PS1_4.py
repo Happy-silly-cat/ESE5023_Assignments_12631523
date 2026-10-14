@@ -13,8 +13,9 @@ def Least_moves(x):
             cnt.append(cnt[i-1]+1)
     return cnt[x]
     
-x=int(input('Please enter your RMB:'))
-Least_moves(x)
+# 输入测试样例：2、5、65
+for x in [2, 5, 65]:
+    print(f'Least_moves({x}) = {Least_moves(x)}')
 
 """
 def Least_moves(x):
